@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+
+$button: #4d4d4d;
+
+body {
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 320px;
+  padding: 6px;
+  background: black;
+  border: 2px solid #373b44;
+  position: relative;
+}
+
+.formulaScreen {
+  min-height: 20px;
+  font-family: "Zen Antique", sans-serif;
+  font-size: 20px;
+  color: orange;
+  text-align: right;
+  vertical-align: text-top;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.outputScreen {
+  font-family: "Zen Antique", sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: right;
+  line-height: 35px;
+}
+
+button {
+  position: relative;
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid black;
+  border: none;
+  background: $button;
+  font-size: 20px;
+  &:hover {
+    color: black;
+    outline: 0.05em solid grey;
+    z-index: 3;
+  }
+}
+
+.x2 {
+  width: 160px;
+}
